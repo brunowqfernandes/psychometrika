@@ -10,10 +10,6 @@ const ChapterSchema = new mongoose.Schema({
     ref: 'Book',
     required: true
   },
-  html:{
-    type: String,
-    required: true
-  },
   createdAt: {
     type: Date,
     default: Date.now
