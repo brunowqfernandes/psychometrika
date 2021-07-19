@@ -4,6 +4,8 @@ Teste para desenvolvedor fullstack
 
 ## Instalação
 
+Criar database no mongoDb com nome psychometrika, e importar collections na pasta [mongoCollections](/mongoCollections)
+
 Usar o gerenciador de pacotes para instalar as dependências das pastas front e back
 
 ```bash

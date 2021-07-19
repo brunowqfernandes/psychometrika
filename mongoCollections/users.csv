@@ -1,0 +1,5 @@
+__v,_id,createdAt,email,grade,isAdmin,name,password
+0,60ecf678292b6446cc8fda41,2021-07-13T02:12:08.575Z,admin@email.com,60ed82c39a79c10520af2ff4,true,Admin,$2a$10$0HOtS6tegFbqZwl6YLYQZe9mqtXQM/924cSWx1R9aTQ3foTMUW9eW
+0,60ecfb6385b73022e0ae4327,2021-07-13T02:33:07.436Z,aluno@email.com,60ecfb4785b73022e0ae4324,false,Aluno,$2a$10$KJ8iQsafYIcql1bDt1MeWOpG29V1CUwHi.T1PX8oR3fs1jiB6YM96
+0,60ed0cdbfa48e011e4196022,2021-07-13T03:47:39.511Z,aluno2@email.com,60ed0b6afa48e011e4196000,false,Aluno,$2a$10$OGz1LSkQrmcP0LnXdDUqzOATm7mlFfCbXwIkKWbXHmtx8cYJNufGu
+0,60ed0d4cfa48e011e4196029,2021-07-13T03:49:32.523Z,aluno3@email.com,60ed0b64fa48e011e4195ffe,false,Aluno,$2a$10$U7MDtGq7BmJ.hsQ91m7Cou0floxPRswTutt6UiptiHxVeZL47nzd2

@@ -1,0 +1,5 @@
+__v,_id,chapters,chaptersOrder,createdAt,grade,title
+1,60ed83019a79c10520af2ffa,"[{""$oid"":""60edbe9c88bf065c80f12ff4""}]",,2021-07-13T12:11:45.653Z,60ed82c39a79c10520af2ff4,Frente A 1a
+2,60ed830f9a79c10520af3000,"[{""$oid"":""60ed83e413d33a63f8a4ed8c""},{""$oid"":""60ed83eb13d33a63f8a4ed91""}]","[{""_id"":""60ed83eb13d33a63f8a4ed91"",""title"":""Capitulo 2"",""book"":""60ed830f9a79c10520af3000"",""createdAt"":""2021-07-13T12:15:39.952Z"",""__v"":0},{""_id"":""60ed83e413d33a63f8a4ed8c"",""title"":""Capitulo 1"",""book"":""60ed830f9a79c10520af3000"",""createdAt"":""2021-07-13T12:15:32.668Z"",""__v"":0}]",2021-07-13T12:11:59.174Z,60ed82c79a79c10520af2ff6,Frente B 2a
+0,60ed831c9a79c10520af3006,[],,2021-07-13T12:12:12.027Z,60ed82cb9a79c10520af2ff8,Frente D 3a
+0,60ed83319a79c10520af300c,[],,2021-07-13T12:12:33.346Z,60ed82cb9a79c10520af2ff8,Frente A 3a
