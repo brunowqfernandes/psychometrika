@@ -18,3 +18,4 @@ cd front
 yarn install
 yarn dev
 ```
+Se o navegador não abrir automaticamente, acessar [https://localhost:3000](https://localhost:3000)
