@@ -1,10 +1,25 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { AuthProvider } from '../src/contexts/AuthContext'
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
+   /* Reset <CSS></CSS>*/
+   *{
+    margin:0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  html, body, #__next{
+    height: 100%;
+  }
+
+  body {
+    font-family: sans-serif;    
+  }
+  
+  #__next{
+    display: flex;
+    flex-flow: column;
   }
 `
 
@@ -19,7 +34,9 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <AuthProvider>
+          <Component {...pageProps} />
+        </AuthProvider>
       </ThemeProvider>
     </>
   )
