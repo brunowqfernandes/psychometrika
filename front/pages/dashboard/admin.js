@@ -1,22 +1,18 @@
-import { useContext } from 'react'
+import { parseCookies } from 'nookies'
 import { resetServerContext } from 'react-beautiful-dnd'
-
-import { AuthContext } from '../../src/contexts/AuthContext'
 import { getAPIClient } from '../../src/services/axios'
+
+
+import { Header } from '../../src/components/Header'
+import { ViewSelect } from '../../src/components/ViewSelect'
+import { SchoolName } from '../../src/components/SchoolName'
+import { MainWrapper } from '../../src/components/MainWrapper'
+import { DraggableGrade } from '../../src/components/DraggableGrade'
 
 import logo from '/public/images/logo.svg'
 
-import { Header } from '../../src/components/Header'
-import { MainWrapper } from '../../src/components/MainWrapper'
-import { SchoolName } from '../../src/components/SchoolName'
-import { ViewSelect } from '../../src/components/ViewSelect'
-import { DraggableGrade } from '../../src/components/DraggableGrade'
-import { parseCookies } from 'nookies'
-
-export default function AdminDashboard({grades}) {
-  resetServerContext();
-  const { user } = useContext(AuthContext)
-
+export default function Admin({grades}) {
+  resetServerContext()
   return (
     <>
       <Header>

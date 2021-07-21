@@ -2,11 +2,12 @@ import router from 'next/router'
 import { parseCookies } from 'nookies'
 import { useContext } from 'react'
 import { MainWrapper } from '../../src/components/MainWrapper'
+import { ViewSelect } from '../../src/components/ViewSelect'
 
 import { AuthContext } from '../../src/contexts/AuthContext'
 
-export default function UserDashboard() {
-  const { user } = useContext(AuthContext)
+export default function Dashboard() {
+  const { user, signOut } = useContext(AuthContext)
   
   if(user){
     const type = user.isAdmin ? 'admin' : 'user'

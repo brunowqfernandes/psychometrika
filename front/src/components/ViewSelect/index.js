@@ -6,7 +6,7 @@ import { StyledViewSelect } from './styles';
 export function ViewSelect({viewType}){
   const [open, setOpen] = useState(false);
   const [accessType, setAccessType] = useState(viewType);
-  const { signOut } = useContext(AuthContext)
+  const { user, signOut } = useContext(AuthContext)
 
   async function handleLogout() {
     signOut();
@@ -24,15 +24,17 @@ export function ViewSelect({viewType}){
       <div>
         <form onSubmit={handleViewChange}>
           <p>Você está atualmente com:</p>
-          <label>            
-            <input 
+          {user?.isAdmin &&
+            <label>
+              <input
               type="radio" 
               value="admin"
               checked={accessType === "admin"}
               onChange={e => setAccessType(e.target.value)}
-            />
-            <span>Acesso do Admin</span>
-          </label>
+              />
+              <span>Acesso do Admin</span>
+            </label>
+            }
           <label>
             <input 
               type="radio" 
@@ -42,7 +44,9 @@ export function ViewSelect({viewType}){
             />
             <span>Acesso do Aluno</span>
           </label>
-          <button>Alterar</button>
+          {user?.isAdmin &&
+            <button>Alterar</button>
+          }
         </form>
         <button className="btn-sair" onClick={handleLogout}>Sair</button>
       </div>

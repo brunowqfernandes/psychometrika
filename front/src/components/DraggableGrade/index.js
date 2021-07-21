@@ -10,9 +10,10 @@ export function DraggableGrade({ books, title }){
 
   function handleRestoreOrder(){
     books.forEach(async book => {
-      await api.put(`books/update_chapters_order/${book._id}`, {
-        chaptersOrder: null
-      } )
+      if(book.chaptersOrder)
+        await api.put(`books/update_chapters_order/${book._id}`, {
+          chaptersOrder: null
+        } )
     });
   }
   

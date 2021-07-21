@@ -14,6 +14,7 @@ export function AuthProvider({children}){
   const isAuthenticated = !!user;
 
   useEffect(() => {
+    console.log('useEffect')
     const { 'psychometrika.token': token } = parseCookies()
     
     if(token){

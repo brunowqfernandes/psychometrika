@@ -8,8 +8,6 @@ import hideImg from '/public/images/hide.svg'
 
 import { BoxLogin } from '../src/components/BoxLogin'
 import { MainWrapper } from '../src/components/MainWrapper'
-import { parseCookies } from 'nookies'
-
 
 export default function Login() {
   const [show, setShow] = useState(false);  
@@ -73,20 +71,4 @@ export default function Login() {
       </BoxLogin>
     </MainWrapper>
   )
-}
-
-export const getServerSideProps = async (ctx) => {
-  const {'psychometrika.token': token} = parseCookies(ctx)
-  
-  if(token) {
-    return{
-      redirect: {
-        destination: '/dashboard',
-        permanent: false
-      }
-    }
-  }
-  return {
-    props: {}
-  }
 }
