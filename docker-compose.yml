@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  react:  
+    build: ./front
+    restart: always
+    container_name: react
+    ports: 
+      - "3000:3000"
+    volumes: 
+      - ./front:/front
+      - /front/node_modules
+    links: 
+      - node
+  node:
+    build: ./back
+    restart: always
+    container_name: node
+    ports: 
+      - "3080:3080"
+    volumes: 
+      - ./back:/back
+      - /back/node_modules
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: mongodb
+    ports:
+        - "27017:27017"
+    command: mongod
+  mongo_seed:
+    image: mongo
+    volumes: 
+      - ./mongoCollections:/mongoCollections
+    links:
+      - mongodb
+    command:
+      mongoCollections/import.sh

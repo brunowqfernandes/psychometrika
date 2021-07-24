@@ -1,3 +1,0 @@
-__v,_id,createdAt,email,grade,isAdmin,name,password
-0,60ecf678292b6446cc8fda41,2021-07-13T02:12:08.575Z,admin@email.com,60ed82c39a79c10520af2ff4,true,Admin,$2a$10$0HOtS6tegFbqZwl6YLYQZe9mqtXQM/924cSWx1R9aTQ3foTMUW9eW
-0,60ecfb6385b73022e0ae4327,2021-07-13T02:33:07.436Z,aluno@email.com,60ed82c79a79c10520af2ff6,false,Aluno,$2a$10$KJ8iQsafYIcql1bDt1MeWOpG29V1CUwHi.T1PX8oR3fs1jiB6YM96

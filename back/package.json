@@ -17,6 +17,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "start": "nodemon ./src/index.js"
   }
 }

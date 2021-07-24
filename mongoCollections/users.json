@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "60ecf678292b6446cc8fda41"
+  },
+  "name": "Admin",
+  "email": "admin@email.com",
+  "password": "$2a$10$0HOtS6tegFbqZwl6YLYQZe9mqtXQM/924cSWx1R9aTQ3foTMUW9eW",
+  "isAdmin": true,
+  "createdAt": {
+    "$date": "2021-07-13T02:12:08.575Z"
+  },
+  "__v": 0,
+  "grade": {
+    "$oid": "60ed82c39a79c10520af2ff4"
+  }
+},{
+  "_id": {
+    "$oid": "60ecfb6385b73022e0ae4327"
+  },
+  "isAdmin": false,
+  "name": "Aluno",
+  "email": "aluno@email.com",
+  "password": "$2a$10$KJ8iQsafYIcql1bDt1MeWOpG29V1CUwHi.T1PX8oR3fs1jiB6YM96",
+  "grade": {
+    "$oid": "60ed82c79a79c10520af2ff6"
+  },
+  "createdAt": {
+    "$date": "2021-07-13T02:33:07.436Z"
+  },
+  "__v": 0
+}]

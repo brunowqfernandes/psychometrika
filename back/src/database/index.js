@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/psychometrika', {
+mongoose.connect('mongodb://mongodb:27017/psychometrika', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "60f5911c8150b821bcc10df8"
+  },
+  "title": "Capitulo 2",
+  "book": {
+    "$oid": "60ed83019a79c10520af2ffa"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:50:04.834Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f5914e8150b821bcc10dfc"
+  },
+  "title": "Capitulo 1",
+  "book": {
+    "$oid": "60ed83019a79c10520af2ffa"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:50:54.828Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f591518150b821bcc10e00"
+  },
+  "title": "Capitulo 2",
+  "book": {
+    "$oid": "60ed83019a79c10520af2ffa"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:50:57.562Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f591538150b821bcc10e04"
+  },
+  "title": "Capitulo 3",
+  "book": {
+    "$oid": "60ed83019a79c10520af2ffa"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:50:59.750Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f591558150b821bcc10e08"
+  },
+  "title": "Capitulo 4",
+  "book": {
+    "$oid": "60ed83019a79c10520af2ffa"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:51:01.707Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f591578150b821bcc10e0c"
+  },
+  "title": "Capitulo 5",
+  "book": {
+    "$oid": "60ed83019a79c10520af2ffa"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:51:03.263Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f591608150b821bcc10e10"
+  },
+  "title": "Capitulo 1",
+  "book": {
+    "$oid": "60ed830f9a79c10520af3000"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:51:12.173Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f591628150b821bcc10e14"
+  },
+  "title": "Capitulo 2",
+  "book": {
+    "$oid": "60ed830f9a79c10520af3000"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:51:14.510Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f591648150b821bcc10e18"
+  },
+  "title": "Capitulo 3",
+  "book": {
+    "$oid": "60ed830f9a79c10520af3000"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:51:16.770Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f591688150b821bcc10e1c"
+  },
+  "title": "Capitulo 4",
+  "book": {
+    "$oid": "60ed830f9a79c10520af3000"
+  },
+  "createdAt": {
+    "$date": "2021-07-19T14:51:20.713Z"
+  },
+  "__v": 0
+}]
