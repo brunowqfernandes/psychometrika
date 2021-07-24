@@ -4,7 +4,7 @@ services:
   react:  
     build: ./front
     restart: always
-    container_name: react
+    container_name: react    
     ports: 
       - "3000:3000"
     volumes: 
@@ -12,10 +12,12 @@ services:
       - /front/node_modules
     links: 
       - node
+    networks:
+      - psychonet
   node:
     build: ./back
     restart: always
-    container_name: node
+    container_name: node    
     ports: 
       - "3080:3080"
     volumes: 
@@ -23,6 +25,8 @@ services:
       - /back/node_modules
     depends_on:
       - mongodb
+    networks:
+      - psychonet
   mongodb:
     image: mongo
     restart: always
@@ -30,6 +34,8 @@ services:
     ports:
         - "27017:27017"
     command: mongod
+    networks:
+      - psychonet
   mongo_seed:
     image: mongo
     volumes: 
@@ -38,3 +44,8 @@ services:
       - mongodb
     command:
       mongoCollections/import.sh
+    networks:
+      - psychonet
+networks:
+  psychonet:
+    driver: bridge

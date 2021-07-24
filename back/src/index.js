@@ -9,4 +9,4 @@ app.use(express.urlencoded({extended: false}))
 
 require('./app/controllers/index')(app);
 
-app.listen(3080);
+app.listen(3080, '0.0.0.0');
